@@ -149,3 +149,49 @@ Login with:
 * Password: (above output)
 
 ---
+
+## **Method 2: Install ArgoCD using Official Manifests (kubectl apply)**
+
+(fastest for demos & learning)
+
+### 1. Create namespace
+
+```bash
+kubectl create namespace argocd
+```
+
+### 2. Apply ArgoCD installation manifest
+
+```bash
+kubectl apply -n argocd \
+  -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+```
+
+### 3. Verify installation
+
+```bash
+kubectl get pods -n argocd
+kubectl get svc -n argocd
+```
+
+### 4. Expose ArgoCD server
+
+```bash
+kubectl port-forward svc/argocd-server -n argocd 8080:443 --address=0.0.0.0 &
+```
+
+Access → **[https://<instance_public_ip>:8080](https://<instance_public_ip>:8080)**
+
+### 5. Get initial password
+
+```bash
+kubectl get secret argocd-initial-admin-secret -n argocd \
+  -o jsonpath="{.data.password}" | base64 -d && echo
+```
+
+Login with:
+
+* Username: `admin`
+* Password: (above output)
+
+---
