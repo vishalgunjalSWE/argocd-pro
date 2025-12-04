@@ -31,3 +31,21 @@ Replace `<your-username>` with your GitHub Username.
 This repo contains the manifest files that are need to apply all three approaches
 
 ---
+
+We will explore three different methods to deploy applications using ArgoCD. Each method has its own advantages and is suited for different scenarios.
+
+👉 Click below to explore each approach step by step:
+
+1. [UI Approach (NGINX Example)](./ui_approach/nginx/README.md)  
+   - Deploy app via ArgoCD Dashboard  
+   - Good for beginners and demos  
+
+2. [CLI Approach (Apache Example)](./cli_approach/apache/README.md)  
+   - Deploy app via ArgoCD CLI (`argocd app create`)  
+   - Good for admins and operators  
+
+3. [Declarative Approach (Online Shop Example)](./declarative_approach/online_shop/README.md)  
+   - Deploy app via **Application CRD (YAML in Git)**  
+   - True GitOps → reproducible, auditable, production-ready  
+
+---
