@@ -233,3 +233,12 @@ argocd account get-user-info
 
 ---
 
+#  Helm vs Manifest Installation
+
+| Feature         | Helm Install (Method 1)     | Manifests (Method 2)         |
+| --------------- | --------------------------- | ---------------------------- |
+| **Flexibility** | High (override values.yaml) | Low (default configs only)   |
+| **Ease of Use** | Requires Helm               | Works with just kubectl      |
+| **Best for**    | Production & customization  | Quick demo / lab environment |
+
+---
