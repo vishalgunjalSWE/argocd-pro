@@ -49,3 +49,21 @@ We will explore three different methods to deploy applications using ArgoCD. Eac
    - True GitOps → reproducible, auditable, production-ready  
 
 ---
+
+##  Comparison: UI vs CLI vs Declarative Approaches
+
+| Approach       | How App is Created | Where Config Lives | Best For | Limitations |
+|----------------|-------------------|--------------------|----------|-------------|
+| **UI** (NGINX) | Create app via **ArgoCD Dashboard** | In **Cluster only** | Learning, demos, POCs | Not reproducible, not version-controlled |
+| **CLI** (Apache) | `argocd app create ...` via **CLI** | In **Cluster only** | Operators, quick scripting | Still imperative, config not in Git |
+| **Declarative** (Online Shop) | Apply **Application CRD YAML** | In **Git + Cluster** | Production, teams, real GitOps | Initial setup effort needed |
+
+---
+
+##  Key Takeaways
+
+- **UI** → Fast & visual → great for learning, but **not GitOps**.  
+- **CLI** → Scriptable & powerful → better than UI, but still **imperative**.  
+- **Declarative** → Version-controlled & reproducible → the **true GitOps way** (what you’ll use in production).  
+
+---
