@@ -242,3 +242,10 @@ argocd account get-user-info
 | **Best for**    | Production & customization  | Quick demo / lab environment |
 
 ---
+
+# Professional Best Practices
+
+* For **local demo/testing** → use **kubectl apply**.
+* For **production or enterprise** → use **Helm** (better upgrades & customization).
+* Always **separate namespaces** (don’t install into `default`).
+* Store **Application CRDs** in Git repos (GitOps best practice).
