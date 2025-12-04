@@ -11,3 +11,7 @@ Every chapter reflects how I approach ArgoCD as a DevOps/SRE engineer —
 ### [01_intro_to_gitops_argocd](./01_intro_to_gitops_argocd/)
 * Introduction to GitOps and ArgoCD principles
 * Start here to understand the foundation of GitOps workflows
+
+### [02_argocd_basics](./02_argocd_basics/)
+* Learn ArgoCD basics, architecture, and key concepts
+* Covers core components and how ArgoCD fits into GitOps
