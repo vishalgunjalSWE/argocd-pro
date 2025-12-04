@@ -9,3 +9,25 @@ In this chapter, we will learn how to deploy applications with ArgoCD using **th
 Each method has its use cases, but only the **Declarative approach** aligns with the principles of GitOps.  
 
 ---
+
+## Fork and Clone this Git Repository into local system
+
+1. First Fork it into your GitHub Account:
+
+   Go to below url, and fork it:
+
+      ```bash
+      https://github.com/vishalgunjalswe/argocd-demos.git
+      ```
+
+2. Then clone it, into your Local system
+
+      ```bash
+      git clone https://github.com/<your-username>/argocd-demos.git
+      ```   
+
+Replace `<your-username>` with your GitHub Username.
+
+This repo contains the manifest files that are need to apply all three approaches
+
+---
