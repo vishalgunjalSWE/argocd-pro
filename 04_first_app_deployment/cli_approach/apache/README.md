@@ -151,7 +151,7 @@ You should see `apache-app` in the list.
 
 ```
 NAME               CLUSTER                      NAMESPACE  PROJECT  STATUS  HEALTH   SYNCPOLICY  CONDITIONS  REPO                                                PATH                 TARGET
-argocd/apache-app  https://172.31.19.178:33893  default    default  Synced  Healthy  Auto-Prune  <none>      https://github.com/Amitabh-DevOps/argocd-demos.git  cli_approach/apache 
+argocd/apache-app  https://172.31.19.178:33893  default    default  Synced  Healthy  Auto-Prune  <none>      https://github.com/vishalgunjalswe/argocd-demos.git  cli_approach/apache 
 ```
 
 and in UI, you can check it is creating:
