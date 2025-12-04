@@ -1,4 +1,4 @@
-# Chapter 1: Intro to GitOps & ArgoCD
+# 1: Intro to GitOps & ArgoCD
 
 ## 1.1 What is GitOps?
 
@@ -50,5 +50,3 @@ GitOps is built on four key principles:
 **In short:** GitOps reduces manual errors, improves security, and ensures production always matches Git.
 
 ---
-
-Happy Learning!
